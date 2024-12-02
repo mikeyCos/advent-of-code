@@ -32,7 +32,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">ProjectName</h3>
+<h3 align="center">Advent of Code</h3>
 
   <p align="center">
     project_description
@@ -86,7 +86,7 @@ Project: ProjectName
 
 Hello world,
 
-Pellentesque tincidunt vel ante lobortis vehicula. Donec ex justo, volutpat nec ultricies non, elementum nec nibh. Maecenas porttitor est ac nibh congue, sed placerat lorem bibendum. Duis non ante in ex sollicitudin pulvinar nec sit amet turpis. Pellentesque ac elit sed libero vehicula convallis. Pellentesque tincidunt tellus nec lacus mollis pellentesque. Integer tempus sit amet nunc a auctor. Morbi at ullamcorper dolor, non placerat orci. Ut ut efficitur metus. In efficitur enim id sodales porta. Phasellus scelerisque, augue sit amet semper suscipit, lacus nunc laoreet lorem, sit amet elementum orci justo in risus. Ut diam est, egestas sed ligula ut, cursus dignissim nibh. Mauris in est dui. Pellentesque in sem ut dolor laoreet porta. Etiam vitae accumsan tortor. Vestibulum magna mi, sagittis eget consequat a, tincidunt in ligula.
+This is a repository for Advent of Code.
 
 To failing forward, cheers!
 
@@ -94,7 +94,6 @@ To failing forward, cheers!
 
 ### Built With
 
-- [![React][React.js]][React-url]
 - [![JavaScript][JavaScript.js]][JavaScript-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -119,9 +118,9 @@ This is a list of things you need to use the software and how to install them.
 
 1. Create repository
     - Option 1:
-      1. Go to [module-react-starter repository](https://github.com/mikeyCos/module-react-starter) on GitHub and click 'Use this template' button or click [Create a new repository](https://github.com/new?template_name=module-react-starter&template_owner=mikeyCos).
+      1. Go to [advent-of-code repository](https://github.com/mikeyCos/advent-of-code) on GitHub.
     - Option 2:
-      1. Clone [module-react-starter repository](https://github.com/mikeyCos/module-react-starter) using HTTPS/SSH/GitHub CLI; [more on cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+      1. Clone [advent-of-code repository](https://github.com/mikeyCos/advent-of-code) using HTTPS/SSH/GitHub CLI; [more on cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
       2. Navigate to cloned repository.
       3. Remove `.git` folder.
       4. Run `git init`.

@@ -1,5 +1,13 @@
 # Changelog
 ---
+### 01 DEC 2024
+- Created `advent-of-code` repository with `node-express-template` repository.
+- Cloned `advent-of-code` to local machine.
+- Created `inputs` subdirectory.
+- Created `day_1.js` in `utils` subdirectory.
+- Created `specifications` subdirectory.
+- Completed Advent of Code Day 1.
+---
 ### 26 AUG 2024
 - Initialized `NodeJS`/`Express` boilerplate template named `node-express-template`.
 - Created a variety of files including: `CHANGELOG.md`, `app.js`, and `PROJECT_SPECIFICATIONS`.
