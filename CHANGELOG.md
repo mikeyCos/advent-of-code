@@ -1,5 +1,11 @@
 # Changelog
 ---
+### 02 DEC 2024
+- Refactored `calculateSimilarityScore` function in `day_1.js` module.
+- Created `day_2.js` in `utils/2024` subdirectory.
+- Created `input_day_2.txt` in `inputs/2024` subdirectory.
+- Created `day_2.md` in `specifications/2024` subdirectory.
+---
 ### 01 DEC 2024
 - Created `advent-of-code` repository with `node-express-template` repository.
 - Cloned `advent-of-code` to local machine.

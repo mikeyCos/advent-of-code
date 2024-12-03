@@ -1,4 +1,3 @@
-const { resolveObjectURL } = require("buffer");
 const fs = require("fs");
 
 /*
@@ -95,7 +94,7 @@ const readInputs = (path) => {
 const parseData = (data) => {
   const lists = data.split("\n").reduce(
     (accumulator, currentPair) => {
-      const [x, y] = currentPair.split(/[ ,]+/).map(Number);
+      const [x, y] = currentPair.split(/[ ,]+/);
       return {
         ...accumulator,
         left: [...accumulator.left, x],
@@ -123,9 +122,35 @@ const calculateTotalDistance = (arr1, arr2) => {
 };
 
 const calculateSimilarityScore = (arr1, arr2) => {
-  const similarityScore = arr1.reduce((accumulator, currentValue) => {
+  // How to set a counter object?
+  // counter = { 1: 7, 2: 1 }
+  /* const similarityScore = arr1.reduce((accumulator, currentValue) => {
     const multiple = arr2.filter((num) => num === currentValue).length;
     return accumulator + currentValue * multiple;
+  }, 0);
+
+  return similarityScore; */
+
+  // const arr2Counts = arr2.reduce((accumulator, key) => {
+  //   return {
+  //     ...accumulator,
+  //     [key]: accumulator[key] === undefined ? 0 : accumulator[key] + 1,
+  //   };
+  // }, {});
+
+  const arr2Counts = arr2.reduce((accumulator, key) => {
+    return {
+      ...accumulator,
+      [key]: (accumulator[key] ?? 0) + 1,
+    };
+  }, {});
+
+  const similarityScore = arr1.reduce((accumulator, key) => {
+    const multiple = arr2Counts[key] ?? 0;
+    return {
+      ...accumulator,
+      similarityScore: accumulator.similarityScore + key * multiple,
+    };
   }, 0);
 
   return similarityScore;
@@ -154,10 +179,15 @@ module.exports = { day_1 };
 /* 
 
 In terminal
+
 node utils/2024/day_1.js
 
 OR 
 
 node -e 'console.log(require("./utils/2024/day_1.js").day_1())'
+
+Based on ./inputs/2024/input_day_1.txt
+totalDistance: 1666427
+similarityScore: 24316233
 
 */
