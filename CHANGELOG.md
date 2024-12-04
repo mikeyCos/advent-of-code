@@ -1,5 +1,11 @@
 # Changelog
 ---
+### 04 DEC 2024
+- Solved Advent of Code Day 3 Part One.
+- Created `day_4.js` in `utils/2024` subdirectory.
+- Created `input_day_4.txt` in `inputs/2024` subdirectory.
+- Created `day_4.md` in `specifications/2024` subdirectory.
+---
 ### 03 DEC 2024
 - Solved Advent of Code Day 2 Part One.
 - Created `day_3.js` in `utils/2024` subdirectory.

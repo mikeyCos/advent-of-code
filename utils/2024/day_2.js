@@ -19,7 +19,6 @@ const parseData = (data) => {
 };
 
 const verifyReports = (arr, callback) => {
-  // console.log("traverseReports running...");
   let safetyReportCounter = 0;
   for (let i = 0; i < arr.length; i++) {
     const report = arr[i];
@@ -33,8 +32,6 @@ const verifyReports = (arr, callback) => {
 const verifyReport = (report) => {
   // The levels are either all increasing or all decreasing.
   // Any two adjacent levels differ by at least one and at most three.
-  // console.log("verifyReport running...");
-  // console.log(report);
   const results = [];
   let isSafe = true;
   for (let i = 0; i < report.length; i++) {

@@ -10,14 +10,32 @@ const readInputs = (path) => {
 };
 
 const parseData = (data) => {
-  const list = data.split("\n").reduce((accumulator, currentValue) => {
-    const dataLine = currentValue.match(/mul\(\d{1,3},\d{1,3}\)/g);
-    return [...accumulator, dataLine];
-  }, []);
+  const inputs = [];
+  const regex = /mul\(\d{1,3},\d{1,3}\)/g;
+  let matches;
+  while ((matches = regex.exec(data)) !== null) {
+    const coefficients = matches[0].match(/\d{1,3}/g);
+    inputs.push(coefficients);
+  }
 
-  return list;
+  return inputs;
+};
+
+const sumOfOperation = (arr, callback) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    const [x, y] = arr[i];
+    const result = callback(x, y);
+    sum += result;
+  }
+  return sum;
+};
+
+const mul = (x, y) => {
+  return x * y;
 };
 
 const data = readInputs("./inputs/2024/input_day_3.txt");
 const parsedData = parseData(data);
-console.log(parsedData);
+const sumOfMul = sumOfOperation(parsedData, mul);
+console.log(sumOfMul);
