@@ -1,5 +1,13 @@
 # Changelog
 ---
+### 03 DEC 2024
+- Solved Advent of Code Day 2 Part One.
+- Created `day_3.js` in `utils/2024` subdirectory.
+- Created `input_day_3.txt` in `inputs/2024` subdirectory.
+- Created `day_3.md` in `specifications/2024` subdirectory.
+- Currently in `day_3.js` module, `parseData` function will return an array of strings that match this, `/mul\(\d{1,3},\d{1,3}\)/g`, regular expression.
+- Removed specifications comments from `day_*.js` files.
+---
 ### 02 DEC 2024
 - Refactored `calculateSimilarityScore` function in `day_1.js` module.
 - Created `day_2.js` in `utils/2024` subdirectory.
